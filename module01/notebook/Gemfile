@@ -15,6 +15,8 @@ gem 'lerolero_generator'
 gem "cocoon"
 # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
 gem 'kaminari'
+# A ruby translation project for kaminari managed on Locale that's open to all!
+gem 'kaminari-i18n'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server

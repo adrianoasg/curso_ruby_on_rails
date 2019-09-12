@@ -2,6 +2,7 @@
   messages:
     confirm: Tem certeza?
     listing: Listando
+    errors: não permitiram que este contato fosse salvo
     contact: Contato
     kind: Tipo Contato
     description: Descrição
