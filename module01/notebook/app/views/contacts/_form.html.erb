@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <h1>Contacts</h1>
+  <h1><%= "#{t('messages.contact')}" %></h1>
 
   <div class="field">
     <%= form.label :name %>
@@ -49,7 +49,7 @@
   </div>
 
   <div class="actions">
-    <%= form.submit "Enviar", class: "button" %>
-    <%= link_to 'Back', contacts_path, class: "button" %>
+    <%= form.submit t('buttons.send'), class: "button" %>
+    <%= link_to t('buttons.back'), contacts_path, class: "button" %>
   </div>
 <% end %>

@@ -1,14 +1,16 @@
 <p id="notice"><%= notice %></p>
 
+<h1><%= "#{t('messages.phone')}" %></h1>
+
 <p>
-  <strong>Phone:</strong>
+  <strong><%= Phone.human_attribute_name("phone") %>:</strong>
   <%= @phone.phone %>
 </p>
 
 <p>
-  <strong>Contact:</strong>
+  <strong><%= Phone.human_attribute_name("contact") %>:</strong>
   <%= @phone.contact_id %>
 </p>
 
-<%= link_to 'Edit', edit_phone_path(@phone) %> |
-<%= link_to 'Back', phones_path %>
+<%= link_to t('buttons.edit'), edit_phone_path(@phone) %> |
+<%= link_to t('buttons.back'), phones_path %>

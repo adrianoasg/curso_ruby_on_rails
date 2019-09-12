@@ -1,6 +1,6 @@
-<h1>Editing Address</h1>
+<%# <h1>Editing Address</h1> %>
 
 <%= render 'form', address: @address %>
 
-<%= link_to 'Show', @address %> |
-<%= link_to 'Back', addresses_path %>
+<%= link_to t('buttons.edit'), @address %> |
+<%= link_to t('buttons.back'), addresses_path %>

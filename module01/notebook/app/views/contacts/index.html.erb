@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Contacts / <%= @meu_nome %></h1>
+<h1><%= "#{t('messages.listing')} #{@contacts.model_name.human(count: @contacts.count)}" %></h1>
 
 <table>
   <thead>
@@ -18,11 +18,10 @@
       <tr>
         <td><%= contact.name %></td>
         <td><%= contact.email %></td>
-        <td><%= contact.kind_id %></td>
-        <td><%= contact.rmk %></td>
-        <td><%= link_to 'Show', contact %></td>
-        <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-        <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= contact.kind.description %></td>
+        <td><%= link_to t('buttons.show'), contact %></td>
+        <td><%= link_to t('buttons.edit'), edit_contact_path(contact) %></td>
+        <td><%= link_to t('buttons.destroy'), contact, method: :delete, data: { confirm: t('messages.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,7 +29,4 @@
 
 <br>
 
-<%= link_to 'New Contact', new_contact_path %>
-
-<%= abc = "ABC" %>
-<%= render partial: "/contacts/shared/teste", locals: {xyz: abc} %>
+<%= link_to t('buttons.new'), new_contact_path %>

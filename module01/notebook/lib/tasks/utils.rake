@@ -8,7 +8,7 @@ namespace :utils do
         name: Faker::Name.name,
         email: Faker::Internet.email,
         kind: Kind.all.sample,
-        rmk: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true, random_sentences_to_add: 4)
+        rmk: LeroleroGenerator.sentence([1,2,3,4,5].sample)
       )
       end
     puts "Gerando os tipos os contatos (Contacts)...[OK]"

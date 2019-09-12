@@ -1,24 +1,26 @@
 <p id="notice"><%= notice %></p>
 
+<h1><%= "#{t('messages.address')}" %></h1>
+
 <p>
-  <strong>Street:</strong>
+  <strong><%= Address.human_attribute_name("street") %>:</strong>
   <%= @address.street %>
 </p>
 
 <p>
-  <strong>City:</strong>
+  <strong><%= Address.human_attribute_name("city") %>:</strong>
   <%= @address.city %>
 </p>
 
 <p>
-  <strong>State:</strong>
+  <strong><%= Address.human_attribute_name("state") %>:</strong>
   <%= @address.state %>
 </p>
 
 <p>
-  <strong>Contact:</strong>
+  <strong><%= Address.human_attribute_name("contact") %>:</strong>
   <%= @address.contact_id %>
 </p>
 
-<%= link_to 'Edit', edit_address_path(@address) %> |
-<%= link_to 'Back', addresses_path %>
+<%= link_to t('buttons.edit'), edit_address_path(@address) %> |
+<%= link_to t('buttons.back'), addresses_path %>

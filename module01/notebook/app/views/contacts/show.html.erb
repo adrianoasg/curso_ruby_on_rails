@@ -1,24 +1,26 @@
 <p id="notice"><%= notice %></p>
 
+<h1><%= "#{t('messages.contact')}" %></h1>
+
 <p>
-  <strong>Name:</strong>
+  <strong><%= Contact.human_attribute_name("name") %>:</strong>
   <%= @contact.name %>
 </p>
 
 <p>
-  <strong>Email:</strong>
+  <strong><%= Contact.human_attribute_name("email") %>:</strong>
   <%= @contact.email %>
 </p>
 
 <p>
-  <strong>Kind:</strong>
+  <strong><%= Contact.human_attribute_name("kind") %>:</strong>
   <%= @contact.kind_id %>
 </p>
 
 <p>
-  <strong>Rmk:</strong>
+  <strong><%= Contact.human_attribute_name("rmk") %>:</strong>
   <%= @contact.rmk %>
 </p>
 
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
+<%= link_to t('buttons.edit'), edit_contact_path(@contact) %> |
+<%= link_to t('buttons.back'), contacts_path %>
