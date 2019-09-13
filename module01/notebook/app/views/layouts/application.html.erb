@@ -6,7 +6,14 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%# javascript_include_tag params[:controller] %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'notifyjs/notify' %>
+    <%# javascript_include_tag 'alert' %>
+    <%# javascript_include_tag params[:controller] %>
+    <%= csrf_meta_tags %>
+
+   
   </head>
 
   <body>
