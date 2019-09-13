@@ -8,6 +8,7 @@
     "@rails/webpacker": "^4.0.7",
     "cocoon-rails": "^1.2.6",
     "jquery-ujs": "^1.2.2",
+    "notifyjs-browser": "^0.4.2",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",

@@ -23,4 +23,4 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 #                                                 home.css
 #                                                 kids.css
 #                                                 phones.css  )
-Rails.application.config.assets.precompile += %w( notifyjs/notify.js )
+# Rails.application.config.assets.precompile += %w( notifyjs/notify.js )

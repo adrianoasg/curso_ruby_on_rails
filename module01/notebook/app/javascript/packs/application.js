@@ -9,6 +9,8 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("cocoon-rails")
+// require("notifyjs/dist/notify.js")
+require("notifyjs-browser")
 require("channels")
 
 

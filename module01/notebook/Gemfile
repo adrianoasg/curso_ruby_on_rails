@@ -3,6 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+# bundler
+gem 'bundler', '>= 1.8.4'
+# rails-assets-notifyjs
+# gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
 # Gem Faker - A library for generating fake data such as names, addresses, and phone numbers.
@@ -17,8 +21,6 @@ gem "cocoon"
 gem 'kaminari'
 # A ruby translation project for kaminari managed on Locale that's open to all!
 gem 'kaminari-i18n'
-# Bundler-like DSL + rake tasks for Bower on Rails
-gem "bower-rails", "~> 0.11.0"
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
