@@ -4,5 +4,6 @@
     show: Mostrar
     edit: Editar
     destroy: Apagar
-    send: Enviar
+    save: Enviar
     back: Voltar
+    home: Início

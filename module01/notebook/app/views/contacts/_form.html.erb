@@ -38,7 +38,7 @@
 
     <div class="field">
     <%= form.label :phones, ">" %><br>
-    <%= link_to_add_association('[Adricionar Telefone]', form, :phones) %>
+    <%= link_to_add_association('[Adicionar Telefone]', form, :phones) %>
   </div>
     
   </div>
@@ -50,8 +50,8 @@
   </div>
 
   <div class="actions">
-    <%= form.submit t('buttons.send'), class: "button" %>
-    <%= link_to t('buttons.back'), contacts_path, class: "button" %>
+    <%= form.submit t('buttons.save'), class: "btn btn-outline-primary" %>
+    <%= link_to t('buttons.back'), contacts_path, class: "btn btn-outline-success" %>
   </div>
 
   <% if contact.errors.any? %>
