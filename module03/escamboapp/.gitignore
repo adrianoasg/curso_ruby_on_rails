@@ -175,6 +175,7 @@ bower.json
 
 ### Ruby ###
 *.gem
+*.lock
 /.config
 /InstalledFiles
 /pkg/
