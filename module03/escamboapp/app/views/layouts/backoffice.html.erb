@@ -49,11 +49,18 @@
   </div>
   <!-- /#wrapper -->
 
+
+  <!-- Oura opção usando Javascript TAG -->
     <% if notice %>
+        <%= javascript_tag "$.notify('#{notice}', 'success');" %>                
+    <% end %>
+  <!-- Javascript TAG -->
+
+    <!-- <% if notice %>
         <script>
             $.notify("<%= notice %>", "success");
         </script>                  
-    <% end %>
+    <% end %> -->
 
     <% if alert %>
         <script>
