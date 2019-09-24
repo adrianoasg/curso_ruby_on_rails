@@ -10,6 +10,7 @@ gem 'bootstrap_sb_admin_base_v2'
 gem 'enum_help'
 gem "pundit"
 gem 'money-rails', '~>1.12'
+gem "paperclip", "~> 6.0.0"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap', '3.3.7'

@@ -17,6 +17,24 @@ namespace :utils do
     puts "ADMINISTRADORES cadastrados com sucesso!"
   end
 
+  ######################################################################
+
+  desc "Cria Membros Fake"
+    task generate_members: :environment do
+      puts "Cadastrando os MEMBROS..."
+
+      100.times do
+      Member.create!( 
+        email: Faker::Internet.email, 
+        password: "123456", 
+        password_confirmation: "123456"
+      )
+      end
+
+      puts "MEMBROS cadastrados com sucesso!"
+  end
+
+  ######################################################################
   desc "Cria Anúcios Fake"
   task generate_ads: :environment do
     puts "Cadastrando ANÚNCIOS..."
@@ -28,7 +46,8 @@ namespace :utils do
         description: LeroleroGenerator.paragraph(Random.rand(3)),
         member: Member.all.sample,
         category: Category.all.sample,
-        price: "#{Random.rand(500)},#{Random.rand(99)}"
+        price: "#{Random.rand(500)},#{Random.rand(99)}",
+        picture: File.new(Rails.root.join('public', 'templates', 'images-for-ads', "#{Random.rand(9)}.jpg"), 'r')
       )
     end
 
